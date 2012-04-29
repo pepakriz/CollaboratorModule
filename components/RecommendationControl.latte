@@ -1,0 +1,14 @@
+{if isset($show)}
+
+<div class="element-comments">
+<h2>Collaborator recommendation</h2>
+
+<ul>
+{foreach $items as $name=>$score}
+       <li><a href="{$basePath}/{$name}">{$name} - score: {$score}</li>
+{/foreach}
+</ul>
+
+</div>
+
+{/if}
